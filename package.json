@@ -1,0 +1,32 @@
+{
+  "name": "unoconv-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lup-/unoconv-api.git"
+  },
+  "keywords": [
+    "unoconv",
+    "convert",
+    "text"
+  ],
+  "author": "Alexander Pavlov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lup-/unoconv-api/issues"
+  },
+  "homepage": "https://github.com/lup-/unoconv-api#readme",
+  "dependencies": {
+    "@koa/multer": "^3.0.0",
+    "@koa/router": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-multer": "^1.0.2",
+    "unoconv2": "^1.0.0"
+  }
+}

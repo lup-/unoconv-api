@@ -1,0 +1,8 @@
+/.idea
+/files
+/node_modules
+/test
+Dockerfile
+.*
+*.yml
+package-lock.json

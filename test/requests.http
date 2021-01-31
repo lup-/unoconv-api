@@ -1,0 +1,46 @@
+POST http://localhost:3000/convert/txt
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="testDoc.docx"
+
+< ./testDoc.docx
+--WebAppBoundary--
+
+###
+POST http://localhost:3000/convert/html
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="testDoc.docx"
+
+< ./testDoc.docx
+--WebAppBoundary--
+
+###
+POST http://localhost:3000/convert/pdf
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="testDoc.docx"
+
+< ./testDoc.docx
+--WebAppBoundary--
+
+###
+POST http://localhost:3000/convert/html
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="testDoc.pdf"
+
+< ./testDoc.pdf
+--WebAppBoundary--
+
+###
+GET http://localhost:3000/formats
+Accept: application/json
+
+<> 2021-01-31T102529.200.json
+
+###
